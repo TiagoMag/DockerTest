@@ -1,6 +1,6 @@
 # Define imagem base
 FROM ubuntu:latest
-
+VOLUME /data
 # Set timezone linux
 ENV TZ=Europe/Lisbon
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
